@@ -1,0 +1,18 @@
+.nav {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 35px;
+	}
+
+	// Mod: Direction Column 
+	&_direction-column &__list{
+		flex-direction: column;
+	}
+}
+
+.nav_direction-column {
+	&__list {
+		flex-direction: column;
+	}
+}

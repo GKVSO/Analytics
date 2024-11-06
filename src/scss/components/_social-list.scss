@@ -1,0 +1,9 @@
+.social-list {
+	display: flex;
+	gap: 40px;
+
+	&__item svg {
+		width: 25px;
+		aspect-ratio: 1/1;
+	}
+}

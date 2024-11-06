@@ -1,0 +1,17 @@
+.icon-social {
+	transition: fill .25s;
+	&.animate {
+		animation: rubberBand;
+		animation-duration: 1s;
+	}
+
+	&__facebook.animate {
+		fill: #4A90E2 ; 
+	}
+	&__twitter.animate{
+		fill: #1da1f2; 
+	}
+	&__instagram.animate{
+		fill: #c13584; 
+	}
+}

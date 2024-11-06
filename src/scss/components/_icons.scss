@@ -1,0 +1,11 @@
+.icon {
+	fill: transparent;
+	stroke: transparent;
+
+	&_gray {
+		fill: $gray-color;
+	}
+	&_color-accent {
+		fill: $accent-color;
+	}
+}

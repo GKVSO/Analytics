@@ -1,0 +1,33 @@
+.cart-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&__item {
+		flex-basis: 33%
+	}
+}
+.cart {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+
+	&__icon {
+		margin-bottom: 26px;
+	}
+	&__title {
+		margin-bottom: 15px;
+		color: $header-color;
+		font-weight: bold;
+	}
+}
+
+@include mobile {
+	.cart-wrapper {
+		gap: 35px;
+		&__item {
+			flex-basis: 100%;
+		}
+	}
+}

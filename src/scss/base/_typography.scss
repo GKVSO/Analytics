@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400%3B0,700%3B1,100&display=swap');
+
+*::selection {
+	background-color: $accent-color;
+	color: white;
+}
+
+body {
+	color: $text-color;
+	font-family: $font-main;
+	font-size: $font-size;
+	text-wrap: balance;
+
+	@include mobile {
+		font-size: $font-size-exsmall;
+	}
+}
+
+// Header
+h1, h2, h3, h4, h5, h6 {
+	color: $header-color;
+}
+h1 {
+	font-size: $font-size-h1;
+}
+h2 {
+	font-size: $font-size-h2;
+}
+h3 {
+	font-size: $font-size-h3;
+}
+h4 {
+	font-size: $font-size-h4;
+}
+h5 {
+	font-size: $font-size-h5;
+}
+h6 {
+	font-size: $font-size-h6;
+}
+
+@include mobile {
+	h1 {
+		font-size: 31px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	h5 {
+		font-size: 15px;
+	}
+	h6 {
+		font-size: 10px;
+	}
+}
+
+// Link
+.link {
+	position: relative;
+	font-size: inherit;
+	color: $link-color;
+	transition: color .25s;
+
+	&::before {
+		content: '';
+		position: absolute;	
+		bottom: -1px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $accent-color;
+
+		transform: scaleX(0);
+		transform-origin: center right;
+		transition: transform .25s;
+	}
+
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: center left;
+	}
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+// HR
+hr {
+	display: block;
+	width: 100%;
+	height: 1px;
+	border-radius: 100%;
+	margin: 10px auto;
+	background-color: $gray-color;
+}
+
+// Text
+.text-exsmall {
+	font-size: $font-size-exsmall;
+}
+.text-small {
+	font-size: $font-size-small;
+}

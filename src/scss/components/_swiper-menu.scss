@@ -1,0 +1,64 @@
+.swiper-menu {
+	overflow: visible;
+}
+.swiper-menu__container {
+	z-index: 100;
+	min-width: 100px;
+	width: 70%;
+	max-width: 320px;
+
+	background-color: $primary-color;
+	min-height: 100vh;
+	height: auto;
+}
+.swiper-menu__wrapper {
+	--height-cap: 83px;
+	--padding-top: 20px;
+
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+
+	font-size: $font-size;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	padding: calc(var(--height-cap) + var(--padding-top)) 0;
+	background-color: $primary-color;
+}
+.swiper-menu__content {
+	width: 100%;
+}
+.swiper-menu__action {
+	display: flex;
+	flex-direction: column;
+	gap: 10px 0;
+}
+.swiper-menu__button {
+	width: 200px;
+}
+.swiper-menu__list {
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+	.swiper-menu__container {
+		display: none;
+	}
+}
+
+@include mobile {
+	.swiper-menu {
+		&__container {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}

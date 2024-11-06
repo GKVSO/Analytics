@@ -1,0 +1,36 @@
+// Media 
+$break-points: (
+	laptop: "max-width: 1140px",
+	tablet: "max-width: 1023px",
+	mobile: "max-width: 767px",
+	small: "max-width: 375px",
+);
+
+// Media
+@mixin laptop {
+	@media screen and (map-get($break-points, laptop)) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (map-get($break-points, tablet)) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media screen and (map-get($break-points, mobile)) {
+		@content;
+	}
+}
+@mixin small {
+	@media screen and (map-get($break-points, small)) {
+		@content;
+	}
+}
+
+// Retina Images Media
+@mixin mediaBg {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}

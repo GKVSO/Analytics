@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+	.dashboard-svg {
+		* {
+			transition: fill-opacity 200ms linear 0s, stroke-opacity 200ms, transform;
+			fill-opacity: 0;
+			stroke-opacity:0;
+		}
+	
+		&.start * {
+			stroke-opacity: 1;
+	
+			&:not([stroke]) {
+				stroke: $secondary-color;
+			}
+		}
+		&.finish * {
+			stroke-opacity: 1;
+			fill-opacity:1;
+		}
+	}
+}
+

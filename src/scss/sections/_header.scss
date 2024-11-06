@@ -1,0 +1,141 @@
+.header {
+	--background-offset: 20px;
+	--height-cap: 0px;
+
+	display: flex;
+	position: relative;
+	min-height: 836px;
+	background-size: cover;
+	margin-bottom: 20px;
+	padding-top: var(--height-cap);
+
+	background: 
+		url('../assets/images/background-top.png') left bottom var(--background-offset) /cover no-repeat,
+		linear-gradient(-7.5deg, transparent 22.7%, $accent-color 22.7%) left bottom,
+		;
+
+
+	&__container {
+		flex-grow: 1;
+	}
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	&__box {
+		max-width: 550px;
+		padding-left: 7px;
+	}
+	&__title {
+		margin-bottom: 15px;
+	}
+	&-title {
+		color: $white-color;
+	}
+	&__subtitle {
+		font-size: $font-size;
+		margin-bottom: 50px;
+	}
+	&__button {
+		width: 238px;
+	}
+
+	&__image-box {
+		position: absolute;
+		left: 50%;
+		right: -10%;
+		top: 50%;
+		height: auto;
+		transform: translateY(-40%);
+	}
+	&__image-box svg {
+		width: 100%;
+	}
+	&__image {
+		width: 100%;
+		height: 100%;
+	}
+	&__img {
+		display: none;
+
+		@include mobile {
+			display: block;
+		}
+	}
+}
+
+.header-atropos {
+	.atropos-shadow {
+		background: fade-out($secondary-color, .4);
+	}
+
+	&.atropos-active .dashboard-svg__item{
+		animation: shadow-in .25s forwards;
+	}
+	&:not(.atropos-active) .dashboard-svg__item{
+		animation: shadow-out .25s forwards;
+	}
+
+	@include mobile {
+		display: none;
+	}
+}
+
+
+@include laptop {
+	.header {
+		min-height: 100vh;
+	}
+}
+@include tablet {
+	.header {
+		padding-bottom: 120px;
+
+		&__wrapper {
+			flex-direction: column;
+			gap: 50px;
+		}
+
+		&__box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+
+			max-width: 100%;
+			margin: 0 25px;
+
+			padding: 20px 35px;
+			border-radius: 20px;
+			background-color: fade-out($gray-dark-color, .8);
+			backdrop-filter: blur(20px);
+
+			box-shadow: 0px 0px 30px 5px $primary-color;
+		}
+		&__image-box {
+			position: static;
+			transform: none;
+		}
+	}
+}
+
+@include mobile {
+	.header {
+		background: 
+		url('../assets/images/background-top.png') left bottom var(--background-offset) /cover no-repeat,
+		linear-gradient(-7.5deg, transparent 10%, $accent-color 10%) left bottom,
+		;
+
+		&__wrapper {
+			gap: 25px;
+		}
+	}
+}
+
+@include small {
+	.header__box {
+		margin: 0;
+		padding: 20px 5px;
+	}
+}

@@ -1,0 +1,49 @@
+.footer {
+	padding-bottom: 120px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 65px;
+		border-top: 1px solid $line-color;
+	}
+	&__logo svg {
+		// width: 140px;
+	}
+
+	&-bc {
+		--background-offset: 0px;
+
+		background: 
+		url('../assets/images/footer-bc.png') right top var(--background-offset) /cover no-repeat,
+		linear-gradient(172.5deg, transparent 18%, $accent-color 18%,) left top,
+		;
+
+		& .price {
+			padding-top: 265px;
+		}
+	}
+}
+
+@include mobile {
+	.footer-bc {
+		background: 
+		url('../assets/images/footer-bc.png') right top var(--background-offset) /cover no-repeat,
+		linear-gradient(172.5deg, transparent 10%, $accent-color 10%,) left top;
+
+		.price {
+			padding-top: 160px;
+		}
+	}
+	.footer {
+		padding-bottom: 30px;
+
+		&__nav {
+			display: none;
+		}
+		&__wrapper {
+			padding-top: 45px;
+		}
+	}
+}

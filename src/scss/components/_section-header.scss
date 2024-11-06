@@ -1,0 +1,19 @@
+.section-header {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+	align-items: center;
+	text-align: center;
+
+	&__title_white {
+		color: $white-color;
+	}
+}
+
+@include mobile {
+	.section-header {
+		align-items: flex-start;
+		text-align: left;
+		gap: 25px;
+	}
+}

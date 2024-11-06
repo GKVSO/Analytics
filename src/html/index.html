@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+	<link href="styles/styles.min.css" rel="stylesheet">
+	<title>TaskRunnerGulp2</title>
+</head>
+<body>
+	<div class="cap cap_fix" id='cap'>
+		<div class="container">
+			<div class="cap__wrapper">
+				<a href="#" class='cap__logo'>
+					<svg class='logo' viewBox="0 0 180 41" width='180' height='41'>
+						<g class="logo__icon">
+							<path d="M36.5083 9.14671C32.9048 3.76043 26.8551 0.226929 20 0.226929C8.95431 0.226929 0 9.40096 0 20.7177C0 22.3641 0.189533 23.9652 0.547447 25.4993L10.7322 15.0646C11.7085 14.0643 13.2915 14.0643 14.2678 15.0646L22.5 23.4988L36.5083 9.14671Z"/>
+							<path d="M38.8854 13.9559L24.2678 28.9323C23.2915 29.9325 21.7085 29.9325 20.7322 28.9323L12.5 20.498L2.53418 30.7084C5.9555 36.9733 12.495 41.2085 20 41.2085C31.0457 41.2085 40 32.0345 40 20.7177C40 18.3483 39.6075 16.0729 38.8854 13.9559Z"/>
+					</g>
+					<g class="logo__text">
+							<path d="M62.8083 25.8977H57.6022L56.693 28.914H52.6342L58.4139 12.7682H61.9857L67.8088 28.914H63.7283L62.8083 25.8977ZM58.5114 22.8926H61.8991L60.1998 17.2925L58.5114 22.8926Z"/>
+							<path d="M82.1284 28.914H78.351L72.766 18.8672V28.914H68.9669V12.7682H72.766L78.3401 22.8149V12.7682H82.1284V28.914Z"/>
+							<path d="M93.6771 25.8977H88.471L87.5618 28.914H83.503L89.2828 12.7682H92.8545L98.6776 28.914H94.5971L93.6771 25.8977ZM89.3802 22.8926H92.7679L91.0686 17.2925L89.3802 22.8926Z"/>
+							<path d="M103.635 25.9199H110.248V28.914H99.8357V12.7682H103.635V25.9199Z"/>
+							<path d="M114.588 19.7765L117.489 12.7682H121.591L116.515 23.1144V28.914H112.662V23.1144L107.596 12.7682H111.677L114.588 19.7765Z"/>
+							<path d="M135.305 15.7733H130.575V28.914H126.776V15.7733H122.132V12.7682H135.305V15.7733Z"/>
+							<path d="M140.965 28.914H137.177V12.7682H140.965V28.914Z"/>
+							<path d="M156.356 23.447C156.306 24.5707 156.01 25.5651 155.469 26.43C154.928 27.2876 154.166 27.9529 153.185 28.4261C152.211 28.8992 151.096 29.1358 149.841 29.1358C147.77 29.1358 146.139 28.4446 144.948 27.0621C143.758 25.6796 143.162 23.728 143.162 21.207V20.4086C143.162 18.8265 143.429 17.4441 143.963 16.2612C144.505 15.071 145.28 14.1543 146.29 13.5111C147.301 12.8606 148.47 12.5353 149.797 12.5353C151.709 12.5353 153.246 13.0528 154.408 14.0878C155.57 15.1154 156.23 16.5348 156.389 18.346H152.601C152.572 17.3628 152.33 16.6568 151.875 16.228C151.421 15.7992 150.728 15.5848 149.797 15.5848C148.852 15.5848 148.159 15.947 147.719 16.6715C147.279 17.396 147.048 18.553 147.026 20.1425V21.2846C147.026 23.0072 147.236 24.2381 147.654 24.9773C148.08 25.7166 148.809 26.0863 149.841 26.0863C150.714 26.0863 151.381 25.8756 151.843 25.4542C152.305 25.0328 152.55 24.3637 152.579 23.447H156.356Z"/>
+							<path d="M166.282 24.6225C166.282 24.0532 166.083 23.6097 165.686 23.2918C165.297 22.9739 164.608 22.6449 163.619 22.3048C162.63 21.9648 161.822 21.6358 161.195 21.3179C159.152 20.2903 158.131 18.8783 158.131 17.0818C158.131 16.1873 158.384 15.4 158.889 14.7198C159.401 14.0323 160.123 13.5 161.054 13.123C161.985 12.7386 163.031 12.5464 164.193 12.5464C165.326 12.5464 166.339 12.7534 167.234 13.1674C168.136 13.5814 168.836 14.1728 169.334 14.9416C169.832 15.7031 170.081 16.5754 170.081 17.5587H166.292C166.292 16.9007 166.094 16.3906 165.697 16.0284C165.307 15.6661 164.777 15.485 164.106 15.485C163.428 15.485 162.89 15.6402 162.493 15.9507C162.104 16.2538 161.909 16.642 161.909 17.1151C161.909 17.5291 162.125 17.9061 162.558 18.2462C162.991 18.5789 163.753 18.9263 164.842 19.2886C165.932 19.6434 166.826 20.0279 167.526 20.4419C169.229 21.4473 170.081 22.8334 170.081 24.6003C170.081 26.0123 169.561 27.1212 168.522 27.9271C167.483 28.7329 166.058 29.1358 164.247 29.1358C162.97 29.1358 161.811 28.9029 160.772 28.4372C159.741 27.964 158.961 27.3208 158.435 26.5076C157.915 25.687 157.655 24.7445 157.655 23.6799H161.465C161.465 24.5449 161.682 25.1843 162.115 25.5983C162.555 26.0049 163.265 26.2082 164.247 26.2082C164.875 26.2082 165.369 26.0715 165.73 25.7979C166.098 25.517 166.282 25.1252 166.282 24.6225Z"/>
+					</g>
+					</svg>
+				</a>
+				<nav class="nav nav_text-sm cap__nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="link nav__link" href="#">Product</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">Pricing Plans</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">FAQ</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">Blog</a></li>
+					</ul>
+				</nav>
+				<div class="cap__action">
+					<button class="button button_border-none cap__button">Sign in</button>
+					<button class="button button_transparent cap__button">Sign Up</button>
+					<button class="menu"></button>
+					<button class="button-menu cap__button-menu">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cap">
+		<div class="container">
+			<div class="cap__wrapper">
+				<a href="#" class='cap__logo'>
+					<svg class='logo' width='184' height='41' viewBox='0 0 184 41'>
+						<g class="logo__icon">
+							<path d="M36.5083 9.14671C32.9048 3.76043 26.8551 0.226929 20 0.226929C8.95431 0.226929 0 9.40096 0 20.7177C0 22.3641 0.189533 23.9652 0.547447 25.4993L10.7322 15.0646C11.7085 14.0643 13.2915 14.0643 14.2678 15.0646L22.5 23.4988L36.5083 9.14671Z"/>
+							<path d="M38.8854 13.9559L24.2678 28.9323C23.2915 29.9325 21.7085 29.9325 20.7322 28.9323L12.5 20.498L2.53418 30.7084C5.9555 36.9733 12.495 41.2085 20 41.2085C31.0457 41.2085 40 32.0345 40 20.7177C40 18.3483 39.6075 16.0729 38.8854 13.9559Z"/>
+					</g>
+					<g class="logo__text">
+							<path d="M62.8083 25.8977H57.6022L56.693 28.914H52.6342L58.4139 12.7682H61.9857L67.8088 28.914H63.7283L62.8083 25.8977ZM58.5114 22.8926H61.8991L60.1998 17.2925L58.5114 22.8926Z"/>
+							<path d="M82.1284 28.914H78.351L72.766 18.8672V28.914H68.9669V12.7682H72.766L78.3401 22.8149V12.7682H82.1284V28.914Z"/>
+							<path d="M93.6771 25.8977H88.471L87.5618 28.914H83.503L89.2828 12.7682H92.8545L98.6776 28.914H94.5971L93.6771 25.8977ZM89.3802 22.8926H92.7679L91.0686 17.2925L89.3802 22.8926Z"/>
+							<path d="M103.635 25.9199H110.248V28.914H99.8357V12.7682H103.635V25.9199Z"/>
+							<path d="M114.588 19.7765L117.489 12.7682H121.591L116.515 23.1144V28.914H112.662V23.1144L107.596 12.7682H111.677L114.588 19.7765Z"/>
+							<path d="M135.305 15.7733H130.575V28.914H126.776V15.7733H122.132V12.7682H135.305V15.7733Z"/>
+							<path d="M140.965 28.914H137.177V12.7682H140.965V28.914Z"/>
+							<path d="M156.356 23.447C156.306 24.5707 156.01 25.5651 155.469 26.43C154.928 27.2876 154.166 27.9529 153.185 28.4261C152.211 28.8992 151.096 29.1358 149.841 29.1358C147.77 29.1358 146.139 28.4446 144.948 27.0621C143.758 25.6796 143.162 23.728 143.162 21.207V20.4086C143.162 18.8265 143.429 17.4441 143.963 16.2612C144.505 15.071 145.28 14.1543 146.29 13.5111C147.301 12.8606 148.47 12.5353 149.797 12.5353C151.709 12.5353 153.246 13.0528 154.408 14.0878C155.57 15.1154 156.23 16.5348 156.389 18.346H152.601C152.572 17.3628 152.33 16.6568 151.875 16.228C151.421 15.7992 150.728 15.5848 149.797 15.5848C148.852 15.5848 148.159 15.947 147.719 16.6715C147.279 17.396 147.048 18.553 147.026 20.1425V21.2846C147.026 23.0072 147.236 24.2381 147.654 24.9773C148.08 25.7166 148.809 26.0863 149.841 26.0863C150.714 26.0863 151.381 25.8756 151.843 25.4542C152.305 25.0328 152.55 24.3637 152.579 23.447H156.356Z"/>
+							<path d="M166.282 24.6225C166.282 24.0532 166.083 23.6097 165.686 23.2918C165.297 22.9739 164.608 22.6449 163.619 22.3048C162.63 21.9648 161.822 21.6358 161.195 21.3179C159.152 20.2903 158.131 18.8783 158.131 17.0818C158.131 16.1873 158.384 15.4 158.889 14.7198C159.401 14.0323 160.123 13.5 161.054 13.123C161.985 12.7386 163.031 12.5464 164.193 12.5464C165.326 12.5464 166.339 12.7534 167.234 13.1674C168.136 13.5814 168.836 14.1728 169.334 14.9416C169.832 15.7031 170.081 16.5754 170.081 17.5587H166.292C166.292 16.9007 166.094 16.3906 165.697 16.0284C165.307 15.6661 164.777 15.485 164.106 15.485C163.428 15.485 162.89 15.6402 162.493 15.9507C162.104 16.2538 161.909 16.642 161.909 17.1151C161.909 17.5291 162.125 17.9061 162.558 18.2462C162.991 18.5789 163.753 18.9263 164.842 19.2886C165.932 19.6434 166.826 20.0279 167.526 20.4419C169.229 21.4473 170.081 22.8334 170.081 24.6003C170.081 26.0123 169.561 27.1212 168.522 27.9271C167.483 28.7329 166.058 29.1358 164.247 29.1358C162.97 29.1358 161.811 28.9029 160.772 28.4372C159.741 27.964 158.961 27.3208 158.435 26.5076C157.915 25.687 157.655 24.7445 157.655 23.6799H161.465C161.465 24.5449 161.682 25.1843 162.115 25.5983C162.555 26.0049 163.265 26.2082 164.247 26.2082C164.875 26.2082 165.369 26.0715 165.73 25.7979C166.098 25.517 166.282 25.1252 166.282 24.6225Z"/>
+					</g>
+					</svg>
+				</a>
+				<nav class="nav nav_text-sm cap__nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="link nav__link" href="#">Product</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">Pricing Plans</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">FAQ</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">Blog</a></li>
+					</ul>
+				</nav>
+				<div class="cap__action">
+					<button class="button button_border-none cap__button">Sign in</button>
+					<button class="button button_transparent cap__button">Sign Up</button>
+					<button class="button-menu cap__button-menu">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="swiper swiper-menu">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-menu__container">
+				<div class="swiper-menu__wrapper">
+					<nav class="nav nav_text-sm nav_direction-column">
+						<ul class="swiper-menu__list nav__list">
+							<li class="nav__item"><a class="link nav__link" href="#">Product</a></li>
+							<li class="nav__item"><a class="link nav__link" href="#">Pricing Plans</a></li>
+							<li class="nav__item"><a class="link nav__link" href="#">FAQ</a></li>
+							<li class="nav__item"><a class="link nav__link" href="#">Blog</a></li>
+						</ul>
+					</nav>
+					<div class="swiper-menu__action">
+						<button class="button button_transparent swiper-menu__button">Sign in</button>
+						<button class="button button_transparent swiper-menu__button">Sign Up</button>
+					</div>
+				</div>
+			</div>
+      <div class="swiper-slide swiper-menu__content">
+        <div class='wrapper'>
+					<!-- HEADER -->
+					 <!--#include file="./blocks/header.html" -->
+			
+					<!-- MAIN -->
+					<main class="main">
+						<!-- FEATURE -->
+						<section class="feature">
+							<div class="container">
+								<div class="section-header feature__header">
+									<h2 class="section-header__title">Main Features</h2>
+									<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+								</div>
+								<div class="cart-wrapper feature__list">
+									<div class="cart cart-wrapper__item">
+										<div class="cart__wrapper-icon" data-aos='fade-right' data-aos-delay="0">
+											<svg class="icon icon_color-accent cart__icon" width='60' height='60' >
+												<use href="../assets/icons/sprite.symbol.svg#clock"></use>
+											</svg>
+										</div>
+										<p class="cart__title text-small">Monitoring 24/7</p>
+										<p class="cart__subtitle  text-small">Lorem ipsum dolor sit amet, consectetur adipis
+											cing elit. Elementum nisi aliquet volutpat.</p>
+									</div>
+									<div class="cart cart-wrapper__item">
+										<div class="cart__wrapper-icon" data-aos='zoom-in' data-aos-delay="50">
+											<svg class="icon icon_color-accent cart__icon" width='60' height='60' >
+												<use href="../assets/icons/sprite.symbol.svg#computer"></use>
+											</svg>
+										</div>
+										<p class="cart__title text-small">Widget System</p>
+										<p class="cart__subtitle text-small">Sapien in etiam vitae nibh nunc mattis imperdiet
+											sed nullam. Vitae et, tortor pulvinar risus pulvinar.</p>
+									</div>
+									<div class="cart cart-wrapper__item">
+										<div class="cart__wrapper-icon" data-aos='fade-left' data-aos-delay='0'>
+											<svg class="icon icon_color-accent cart__icon" width='60' height='60'>
+												<use href="../assets/icons/sprite.symbol.svg#rocket"></use>
+											</svg>
+										</div>
+										<p class="cart__title text-small">Best Performance</p>
+										<p class="cart__subtitle text-small">Lorem ipsum dolor sit amet, consectetur adipis
+											cing elit. Elementum nisi aliquet volutpat.</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- AUTOMATE -->
+						 <section class="automate">
+							<div class="container">
+								<div class="split-block">
+									<div class="split-block__content">
+										<h2 class="split-block__title">Automated Reports
+											& Widget Alerts</h2>
+										<p class="split-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+									</div>
+									<div class="split-block__image" data-aos="fade-left">
+										<img src="./assets/images/automize.png" alt="Automate" width='600' height='410'>
+									</div>
+								</div>
+							</div>
+						 </section>
+						 <!-- CUSTOMIZE -->
+							<section class="customize">
+								<div class="container">
+									<div class="split-block split-block_image-first">
+										<div class="split-block__content">
+											<h2 class="split-block__title">Fully customizable to address your needs </h2>
+											<p class="split-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+										</div>
+										<div class="split-block__image" data-aos="fade-right">
+											<img src="./assets/images/customize.png" alt="Customize" width='600' height='410'>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- DASHBOARD -->
+							<section class="dashboard">
+								<div class="container">
+									<div class="split-block">
+										<div class="split-block__content">
+											<h2 class="split-block__title">Pre-built Dashboard Templates </h2>
+											<p class="split-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
+										</div>
+										<div class="split-block__image" data-aos="fade-left">
+											<img src="./assets/images/dashboard.png" alt="Dashboard" width='600' height='410'>
+										</div>
+								</div>
+								</div>
+					</main>
+			
+					
+					<div class="footer-bc">
+					</section>
+					<!-- PRICE -->
+					 <section class="price">
+						<div class="container">
+							<div class="section-header price__header">
+								<h2 class="section-header__title section-header__title_white">Pricing Plans</h2>
+								<p class="section-header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+							</div>
+							<div class="swiper slider-price">
+								<div class="swiper-wrapper price-wrapper price__wrapper">
+									<div class="swiper-slide cart-price price-wrapper__cart">
+										<div class="cart-price__header">
+											<h4 class="cart-price__title">Starter</h4>
+											<p class="cart-price__subtitle">up to 3 users</p>
+										</div>
+										<div class="cart-price__body">
+											<h4 class="cart-price__amount"><span>$</span>29</h4>
+											<span class="cart-price__date">per month</span>
+											<button class="button button_transparent cart-price__button">Order</button>
+										</div>
+									</div>
+									<div class="swiper-slide cart-price cart-price_white price-wrapper__cart swiper-slide-active">
+										<div class="cart-price__header">
+											<h4 class="cart-price__title">Standard</h4>
+											<p class="cart-price__subtitle">up to 20 users</p>
+										</div>
+										<div class="cart-price__body">
+											<h4 class="cart-price__amount"><span>$</span>99</h4>
+											<span class="cart-price__date">per month</span>
+											<button class="button cart-price__button">Order</button>
+										</div>
+									</div>
+									<div class="swiper-slide cart-price price-wrapper__cart">
+										<div class="cart-price__header">
+											<h4 class="cart-price__title">Premium</h4>
+											<p class="cart-price__subtitle">up to 200 users</p>
+										</div>
+										<div class="cart-price__body">
+											<h4 class="cart-price__amount"><span>$</span>299</h4>
+											<span class="cart-price__date">per month</span>
+											<button class="button button_transparent cart-price__button">Order</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					 </section>
+			
+					 <!-- FOOTER -->
+						<footer class="footer">
+							<div class="container">
+								<div class="footer__wrapper">
+									<a class="footer__logo" href="#">
+										<svg class="icon logo icon_gray" width='140px' height='30px'>
+											<use href="../assets/icons/sprite.symbol.svg#logo"></use>
+										</svg>
+									</a>
+									<nav class="nav nav_text-sm footer__nav">
+										<ul class="nav__list">
+											<li class="nav__item"><a class="link nav__link" href="#">Product</a></li>
+											<li class="nav__item"><a class="link nav__link" href="#">Pricing Plans</a></li>
+											<li class="nav__item"><a class="link nav__link" href="#">FAQ</a></li>
+											<li class="nav__item"><a class="link nav__link" href="#">Blog</a></li>
+										</ul>
+									</nav>
+									<ul class="social-list">
+										<li class="social-list__item">
+											<a class="social-list__link" href="#">
+												<svg class="icon icon-social icon_gray icon-social__facebook">
+													<use href="../assets/icons/sprite.symbol.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social-list__item">
+											<a class="social-list__link" href="#">
+												<svg class="icon icon-social icon_gray icon-social__twitter">
+													<use href="../assets/icons/sprite.symbol.svg#twitter"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="social-list__item">
+											<a class="social-list__link" href="#">
+												<svg class="icon icon-social icon_gray icon-social__instagram">
+													<use href="../assets/icons/sprite.symbol.svg#instagram"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</footer>
+					</div>
+      </div>
+    </div>
+  </div>
+<script src="scripts/index.js"></script>
+</div>
+</body>
+</html>

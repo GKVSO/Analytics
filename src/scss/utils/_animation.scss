@@ -1,0 +1,17 @@
+@keyframes shadow-in {
+  0% {
+    filter: drop-shadow(2px 2px 4px fade-out($secondary-color, 1)); // без тени
+  }
+  100% {
+    filter: drop-shadow(2px 2px 4px fade-out($secondary-color, .4)); // с тенью
+  }
+}
+
+@keyframes shadow-out {
+  0% {
+    filter: drop-shadow(2px 2px 4px fade-out($secondary-color, .4)); // с тенью
+  }
+  100% {
+    filter: drop-shadow(2px 2px 4px fade-out($secondary-color, 1)); // без тени
+  }
+}

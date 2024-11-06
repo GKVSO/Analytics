@@ -1,0 +1,23 @@
+body,
+html {
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: clip;
+}
+body {
+	background-color: $background-color;
+}
+html {
+	scroll-behavior: smooth;
+}
+section {
+    margin-bottom: 120px;
+    @include tablet {
+        margin-bottom: 80px
+    }
+    @include mobile {
+        margin-bottom: 60px
+    }
+}
+@include custom-scrollbar;
+

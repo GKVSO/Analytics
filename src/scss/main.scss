@@ -1,0 +1,60 @@
+// ABSTRACT
+@import './abstract/media';
+@import './abstract/variables';
+@import './abstract/functions';
+@import './abstract/mixins';
+@import './abstract/placeholders';
+
+// UTILS
+@import './utils/helpers';
+@import './utils/mixins';
+@import './utils/animation';
+
+// BASE
+@import './base/reset';
+@import './base/typography';
+
+// Package
+@import '../../node_modules/aos/src/sass/aos.scss';
+@import '../../node_modules/atropos/atropos.scss';
+@import '../../node_modules/animate.css/animate';
+@import '../../node_modules/swiper/swiper';
+
+// LAYOUTS
+@import './layouts/container';
+@import './layouts/layout';
+
+// COMPONENTS
+@import './components/buttons';
+@import './components/form';
+@import './components/input';
+@import './components/icons';
+@import './components/logo';
+@import './components/social-list';
+@import './components/nav';
+@import './components/section-header';
+@import './components/cart';
+@import './components/split-block';
+@import './components/cart-price';
+@import './components/cap';
+@import './components/dashboard-svg';
+@import './components/icon-social';
+@import './components/swiper-menu';
+
+// SECTIONS
+@import './sections/header';
+@import './sections/footer';
+@import './sections/feature';
+@import './sections/price';
+
+
+.typography {
+	background-color: $background-color;
+	.container {
+		margin-bottom: 50px;
+	}
+}
+.btn-container {
+	width: 300px;
+	margin-bottom: 20px;
+}
