@@ -8,7 +8,7 @@ const isDev = nodeEnv === 'development';
 const isProd = !isDev;
 
 function fileName() {
-	return isDev ? '[name].js' : '[name].[fullhash].js'
+	return '[name].js'
 }
 
 export default {
