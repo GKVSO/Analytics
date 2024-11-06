@@ -15,7 +15,7 @@ export function destToBuild() {
     './app/assets/icons/**/*',
     './app/assets/fonts/**/*',
     './app/**/*.html'
-  ]), { base: 'app' })
+  ]), { base: 'app', encoding: false })
 		.pipe(dest('build'))
 }
 
