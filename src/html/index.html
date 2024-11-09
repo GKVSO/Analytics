@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
 	<link href="styles/styles.min.css" rel="stylesheet">
-	<title>TaskRunnerGulp2</title>
+	<title>Analytics</title>
 </head>
 <body>
-	<div class="cap cap_fix" id='cap'>
+	<div class="cap cap_fix" id='cap' aria-hidden='true' inert>
 		<div class="container">
 			<div class="cap__wrapper">
 				<a href="#" class='cap__logo'>
@@ -18,7 +18,7 @@
 							<path d="M38.8854 13.9559L24.2678 28.9323C23.2915 29.9325 21.7085 29.9325 20.7322 28.9323L12.5 20.498L2.53418 30.7084C5.9555 36.9733 12.495 41.2085 20 41.2085C31.0457 41.2085 40 32.0345 40 20.7177C40 18.3483 39.6075 16.0729 38.8854 13.9559Z"/>
 					</g>
 					<g class="logo__text">
-							<path d="M62.8083 25.8977H57.6022L56.693 28.914H52.6342L58.4139 12.7682H61.9857L67.8088 28.914H63.7283L62.8083 25.8977ZM58.5114 22.8926H61.8991L60.1998 17.2925L58.5114 22.8926Z"/>
+							
 							<path d="M82.1284 28.914H78.351L72.766 18.8672V28.914H68.9669V12.7682H72.766L78.3401 22.8149V12.7682H82.1284V28.914Z"/>
 							<path d="M93.6771 25.8977H88.471L87.5618 28.914H83.503L89.2828 12.7682H92.8545L98.6776 28.914H94.5971L93.6771 25.8977ZM89.3802 22.8926H92.7679L91.0686 17.2925L89.3802 22.8926Z"/>
 							<path d="M103.635 25.9199H110.248V28.914H99.8357V12.7682H103.635V25.9199Z"/>
@@ -41,11 +41,10 @@
 				<div class="cap__action">
 					<button class="button button_border-none cap__button">Sign in</button>
 					<button class="button button_transparent cap__button">Sign Up</button>
-					<button class="menu"></button>
-					<button class="button-menu cap__button-menu">
-						<div class="bar"></div>
-						<div class="bar"></div>
-						<div class="bar"></div>
+					<button class="button-menu cap__button-menu" aria-label='open and close slide menu'>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
 					</button>
 				</div>
 			</div>
@@ -54,7 +53,7 @@
 	<div class="cap">
 		<div class="container">
 			<div class="cap__wrapper">
-				<a href="#" class='cap__logo'>
+				<a href="#" class='cap__logo' aria-label='Link to home page'>
 					<svg class='logo' width='184' height='41' viewBox='0 0 184 41'>
 						<g class="logo__icon">
 							<path d="M36.5083 9.14671C32.9048 3.76043 26.8551 0.226929 20 0.226929C8.95431 0.226929 0 9.40096 0 20.7177C0 22.3641 0.189533 23.9652 0.547447 25.4993L10.7322 15.0646C11.7085 14.0643 13.2915 14.0643 14.2678 15.0646L22.5 23.4988L36.5083 9.14671Z"/>
@@ -84,7 +83,7 @@
 				<div class="cap__action">
 					<button class="button button_border-none cap__button">Sign in</button>
 					<button class="button button_transparent cap__button">Sign Up</button>
-					<button class="button-menu cap__button-menu">
+					<button class="button-menu cap__button-menu" aria-label='menu'>
 						<div class="bar"></div>
 						<div class="bar"></div>
 						<div class="bar"></div>
@@ -95,7 +94,7 @@
 	</div>
 	<div class="swiper swiper-menu">
     <div class="swiper-wrapper">
-      <div class="swiper-slide swiper-menu__container">
+      <div class="swiper-slide swiper-menu__container" aria-hidden='true' inert>
 				<div class="swiper-menu__wrapper">
 					<nav class="nav nav_text-sm nav_direction-column">
 						<ul class="swiper-menu__list nav__list">
