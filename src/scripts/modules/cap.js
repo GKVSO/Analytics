@@ -1,11 +1,12 @@
 class Cap {
-	constructor(elSelector, indent) {
+	constructor(elSelector, { indent, fixMenu } = {} ) {
 		this.elSelector = elSelector;
-		this.el = document.querySelector(elSelector);
+		this.scrollMenu = document.querySelector(elSelector);
+		this.fixMenu = document.querySelector(fixMenu)
 		this.indent = indent;
 	}
 	get elHeight() {
-		return Math.abs(this.el.getBoundingClientRect().height);
+		return Math.abs(this.scrollMenu.getBoundingClientRect().height);
 	}
 	get distanceShow() {
 		return this.elHeight + this.indent;
@@ -16,10 +17,16 @@ class Cap {
 	}
 
 	visible() {
-		this.el.classList.add('cap_fix-active')
+		this.scrollMenu.classList.add('cap_fix-active')
+
+		this.scrollMenu.inert = false;
+		this.fixMenu.inert = true;
 	}
 	hidden() {
-		this.el.classList.remove('cap_fix-active')
+		this.scrollMenu.classList.remove('cap_fix-active')
+
+		this.scrollMenu.inert = true;
+		this.fixMenu.inert = false;
 	}
 	handler() {
 		console.log(this.isFix)

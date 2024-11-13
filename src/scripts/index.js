@@ -11,9 +11,11 @@ import { cubicBezier, executeAtResolution, setEventHandler } from 'utils';
 /* INIT */
 // AOS
 AOS.init();
-
 // CAP
-const cap = new Cap('#cap', 150);
+const cap = new Cap('#cap', {
+  indent: 150,
+  fixMenu: '#cap-fix'
+});
 document.addEventListener('scroll', () => {
 	cap.handler();
 })
@@ -105,6 +107,7 @@ executeAtResolution(1024, () => {
     resistanceRatio: 0,
     slideToClickedSlide: true,
   });
+  window.sw = swiperMenu;
   const btn = new Button(swiperMenuButtons[0], {
     targetEl: swiperMenu,
   });
