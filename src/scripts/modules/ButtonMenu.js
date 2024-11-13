@@ -16,12 +16,21 @@ class ButtonMenu {
 		})
 		if(Boolean(targetEl)) {
 			this._targetEl = targetEl;
+			[this.elMenu, this.elContent] = targetEl.slides;
 			this._targetEl.on('slideChange', () => {
 				if(this._targetEl.activeIndex == 0) {
 					this.elButton.classList.add('active');
+
+					this.elMenu.inert = false;
+					this.elContent.inert = true;
+
 					return this.animateIn()
 				} else {
 					this.elButton.classList.remove('active');
+
+					this.elMenu.inert = true;
+					this.elContent.inert = false;
+
 					return this.animateOut()
 				}
 			})
@@ -61,6 +70,8 @@ class ButtonMenu {
 	set lastClickDelay(value) {
 		this._lastClickDelay = Date.now();
 	}
+
+
 	setLastClickDelay() {
 		this.lastClickDelay = true;
 	}
@@ -106,7 +117,7 @@ class ButtonMenu {
 	}
  
 	eventHandler() {
-		if(this.getBetweenClickDelay() < 300) {
+		if(this.getBetweenClickDelay() < 1000) {
 			console.log('false')
 			return false;
 		};
@@ -118,10 +129,18 @@ class ButtonMenu {
 				if(this.isDisabled) {
 					this.elButton.classList.add('active');
 					this.handlerTarget(0)
+
+					this.elMenu.inert = false
+					this.elContent.inert = true;
+
 					return this.animateIn()
 				} else {
 					this.elButton.classList.remove(1);
 					this.handlerTarget(1)
+
+					this.elMenu.inert = true
+					this.elContent.inert = false;
+
 					return this.animateOut()
 				}
 			})
